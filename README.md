@@ -18,6 +18,34 @@ This project is part of the [zkWill](https://github.com/june-in-exile/zkWill) pr
 - **Well-Tested**: Comprehensive test suite covering various input sizes
 - **Documented**: Clear inline documentation for all components
 
+## Installation
+
+Clone or download this repository to your project:
+
+```bash
+git clone https://github.com/june-in-exile/keccak256-circom.git
+```
+
+Or add it as a git submodule:
+
+```bash
+git submodule add https://github.com/june-in-exile/keccak256-circom.git
+```
+
+## Usage
+
+Include the circuits in your Circom project using relative paths:
+
+```circom
+include "../keccak256-circom/circuits/keccak256/keccak256.circom";
+```
+
+Or compile with the `-l` flag to specify the library path:
+
+```bash
+circom your_circuit.circom -l ./keccak256-circom/circuits -o ./build
+```
+
 ## Examples
 
 ### Hash a 256-bit Message
