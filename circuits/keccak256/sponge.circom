@@ -2,7 +2,6 @@ pragma circom 2.2.2;
 
 include "circomlib/circuits/gates.circom";
 include "keccakF1600.circom";
-include "../utils/bits.circom";
 
 /**
  * Keccak Padding (10*1 pattern)

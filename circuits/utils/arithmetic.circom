@@ -22,26 +22,6 @@ template Divide() {
 }
 
 /**
- * Mathematical operation: c[i] = a[i] × b[i] for all i in [0, n-1]
- * 
- * @param n - The length of the input and output arrays
- *
- * Example: Element-wise array multiplication
- *  signal products[4] = MultiplyTwoArray(4)([2, 3, 4, 5],[10, 20, 30, 40]);
- *  Results: [20, 60, 120, 200];
- */
-template MultiplyTwoArray(n) {
-    signal input a[n];
-    signal input b[n];
-    signal output c[n];
-
-    for (var i = 0; i < n; i++) {
-        c[i] <== a[i] * b[i];
-    }
-}
-
-
-/**
  * Mathematical operation: out = in[0] + in[1] + in[2] + ... + in[n-1]
  * 
  * @param n - The number of input signals to sum (must be > 2)

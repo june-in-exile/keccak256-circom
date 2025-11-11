@@ -2,7 +2,6 @@ pragma circom 2.2.2;
 
 include "circomlib/circuits/gates.circom";
 include "../utils/arithmetic.circom";
-include "../utils/bits.circom";
 
 /**
  * Keccak256 θ (theta) step: Column parity computation
